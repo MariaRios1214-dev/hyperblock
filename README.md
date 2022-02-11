@@ -27,10 +27,16 @@ Generar una nueva llave SSH: (Cualquier sistema operativo)
 
 ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
 
-Comprobar proceso y agregarlo (Windows)
+**Comprobar proceso y agregarlo (Windows)**
 
 eval $(ssh-agent - s)
 ssh-add ~/.ssh/id_rsa
-Comprobar proceso y agregarlo (Mac)
+**Cambiar la url / ir a url proyecto8**
+git remote-v ---> Muestra estado actual del direccion de repositorio
+git remote set-url origin ssh del proyecto 
+**ejemplo** git remote set-url origin git@github.com:MariaRios1214-dev/hyperblock.git
+
+
+**Comprobar proceso y agregarlo (Mac)**
 
 eval "$(ssh-agent -s)"
