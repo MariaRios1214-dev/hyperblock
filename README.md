@@ -8,7 +8,8 @@ Un block increible para el curso de Git y Github
 * git log --stat - Explica el número de líneas que se cambiaron brevemente.
 * git log -p- Explica el número de líneas que se cambiaron y te muestra que se cambió en el contenido.
 * git shortlog - Indica que commits ha realizado un usuario, mostrando el usuario y el titulo de sus commits.
-* git log --graph --oneline --decorate y
+* git log --graph -> Muestra ultimos paths historia del proyecto
+* git log --graph --oneline --decorate Muestra todos los paths historia del proyecto
 * git log --pretty=format:"%cn hizo un commit %h el dia %cd" - Muestra mensajes personalizados de los commits.
 * git log -3 - Limitamos el número de commits.
 * git log --after=“2018-1-2” ,
@@ -40,3 +41,8 @@ git remote set-url origin ssh del proyecto
 **Comprobar proceso y agregarlo (Mac)**
 
 eval "$(ssh-agent -s)"
+
+# Alias para guardar comandos 
+ alias pathRamas="git log --all --graph --decorate --oneline"
+ y luego solo es llamar el alias ej **pathRamas**
+
