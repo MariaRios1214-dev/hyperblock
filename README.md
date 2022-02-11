@@ -61,6 +61,16 @@ $ git show-ref --tags
 ## empujar los tags al ambiente 
 $ git push origin --tags
 
+##borar tags
+$ git tag -d v0.2
+
+##eliminar totalmente la referencia del tags / borrado permanente
+$ git push origin :refs/tags/v0.2
+
+Warning: Permanently added the ECDSA host key for IP address '140.82.112.4' to the list of known hosts.
+To github.com:MariaRios1214-dev/hyperblock.git
+ - [deleted]         v0.2
+
 
 
 
