@@ -46,3 +46,22 @@ eval "$(ssh-agent -s)"
  alias pathRamas="git log --all --graph --decorate --oneline"
  y luego solo es llamar el alias ej **pathRamas**
 
+
+# Tags
+
+## create  tags con hash (commit corto)
+$ git tag -a v0.1 -m "Resultado de las primeras clases del grupo" 963f613
+## ver tags
+$ git tag
+v0.1
+## ver  tags con relacion al commit hash (commit corto)
+$ git show-ref --tags
+2550019ebd4eede402e9b3e3dd15424158c2c205 refs/tags/v0.1
+
+## empujar los tags al ambiente 
+$ git push origin --tags
+
+
+
+
+
