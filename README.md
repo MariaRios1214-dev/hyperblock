@@ -56,6 +56,10 @@ Host *
   UseKeychain yes
   IdentityFile ~/.ssh/id_rsa
 
+Agrega tu llave
+
+ssh-add -K ~/.ssh/id_rsa
+
 # Alias para guardar comandos 
  alias pathRamas="git log --all --graph --decorate --oneline"
  y luego solo es llamar el alias ej **pathRamas**
