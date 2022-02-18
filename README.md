@@ -30,8 +30,10 @@ ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
 
 **Comprobar proceso y agregarlo (Windows)**
 
-eval $(ssh-agent - s)
+eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa
+
+
 **Cambiar la url / ir a url proyecto8**
 git remote-v ---> Muestra estado actual del direccion de repositorio
 git remote set-url origin ssh del proyecto 
@@ -41,6 +43,18 @@ git remote set-url origin ssh del proyecto
 **Comprobar proceso y agregarlo (Mac)**
 
 eval "$(ssh-agent -s)"
+¿Usas macOS Sierra 10.12.2 o superior?
+Haz lo siguiente:
+
+cd ~/.ssh
+Crea un archivo config…
+Con vim config
+Con VSCode code config
+Pega la siguiente configuración en el archivo…
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
 
 # Alias para guardar comandos 
  alias pathRamas="git log --all --graph --decorate --oneline"
