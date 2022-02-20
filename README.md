@@ -21,6 +21,7 @@ Un block increible para el curso de Git y Github
 * git log – index.html- Busca los commits en un archivo en específico.
 * git log -S “Por contenido”- Buscar los commits con el contenido dentro del archivo.
 * git log > log.txt - guardar los logs en un archivo txt
+* git log --all --graph --decorate --oneline --> muestra a nivel de ramas el hitorias del proyecto
 
 # SSH --- Protocolo Security shell
 
