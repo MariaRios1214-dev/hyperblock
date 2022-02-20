@@ -24,8 +24,7 @@ Un block increible para el curso de Git y Github
 
 # SSH --- Protocolo Security shell
 
-Generar una nueva llave SSH: (Cualquier sistema operativo)
-
+Generar una nueva llave SSH: (Cualquier sistema operativo) </br>
 ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
 
 **Comprobar proceso y agregarlo (Windows)**
@@ -33,12 +32,11 @@ ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa
 
+**Cambiar la url / ir a url ssh del proyecto**
 
-**Cambiar la url / ir a url proyecto8**
-git remote-v ---> Muestra estado actual del direccion de repositorio
-git remote set-url origin ssh del proyecto 
+git remote-v ---> Muestra estado actual del direccion de repositorio </br>
+git remote set-url origin ssh del proyecto </br>
 **ejemplo** git remote set-url origin git@github.com:MariaRios1214-dev/hyperblock.git
-
 
 **Comprobar proceso y agregarlo (Mac)**
 
@@ -56,14 +54,13 @@ Host *
   UseKeychain yes
   IdentityFile ~/.ssh/id_rsa
 
-Agrega tu llave
+**Agrega tu llave privada en tu entorno**
 
 ssh-add -K ~/.ssh/id_rsa
 
 # Alias para guardar comandos 
  alias pathRamas="git log --all --graph --decorate --oneline"
  y luego solo es llamar el alias ej **pathRamas**
-
 
 # Tags
 
