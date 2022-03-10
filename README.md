@@ -87,7 +87,21 @@ Warning: Permanently added the ECDSA host key for IP address '140.82.112.4' to t
 To github.com:MariaRios1214-dev/hyperblock.git
  - [deleted]         v0.2
 
+## Pull Request GitHub(Merge request Gitlab, push request bitbucket)
 
+Funcionalidad que crea una solicitud de revision y/o aprobacion, en donde a nivel de conversaciones se puede se puede dar seguimiento a un cambio solicitado.
+
+El flujo del pull request es el siguiente
+
+* Se trabaja en una rama paralela a master, los cambios que se van implementar (git checkout -b <rama>)
+* Se hace un commit a la nueva rama (git commit -am '<Comentario>')
+* Se suben al repositorio remoto los cambios  (git push origin <rama>)
+* En GitHub se hace el pull request comparando la rama master con la rama del fix.
+* Uno, o varios colaboradores revisan que el código sea correcto y dan feedback (en el chat del pull request)
+* Martener la nueva rama actualizada con los cambios que se hagan en la rama base (master)
+* El colaborador hace los cambios que desea en la rama y mantiene la rama del pull request actualizada (Cuando se modifica una rama, también se modifica el pull request)
+* Se aceptan los cambios en GitHub
+* Se hace merge a master desde GitHub
 
 
 
