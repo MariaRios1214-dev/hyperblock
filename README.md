@@ -42,38 +42,62 @@ ejemplo git remote set-url origin git@github.com:MariaRios1214-dev/hyperblock.gi
 
 **Comprobar proceso y agregarlo (Mac)**
 
-eval "$(ssh-agent -s)" ¿Usas macOS Sierra 10.12.2 o superior? Haz lo siguiente:
+eval "$(ssh-agent -s)"
+¿Usas macOS Sierra 10.12.2 o superior?
+Haz lo siguiente:
 
-cd ~/.ssh Crea un archivo config… Con vim config Con VSCode code config Pega la siguiente configuración en el archivo… Host \* AddKeysToAgent yes UseKeychain yes IdentityFile ~/.ssh/id_rsa
+cd ~/.ssh
+Crea un archivo config…
+Con vim config
+Con VSCode code config
+Pega la siguiente configuración en el archivo…
+Host \*
+AddKeysToAgent yes
+UseKeychain yes
+IdentityFile ~/.ssh/id_rsa
 
 **Agrega tu llave privada en tu entorno**
 
 ssh-add -K ~/.ssh/id_rsa
 
-**Alias para guardar comandos**
-alias pathRamas="git log --all --graph --decorate --oneline" y luego solo es llamar el alias ej pathRamas
+# Alias para guardar comandos
 
-**Tags**
-create tags con hash (commit corto)
+alias pathRamas="git log --all --graph --decorate --oneline"
+y luego solo es llamar el alias ej **pathRamas**
+
+# Tags
+
+## create tags con hash (commit corto)
+
 $ git tag -a v0.1 -m "Resultado de las primeras clases del grupo" 963f613
 
-**ver tags**
-$ git tag v0.1
+## ver tags
 
-ver tags con relacion al commit hash (commit corto)
-$ git show-ref --tags 2550019ebd4eede402e9b3e3dd15424158c2c205 refs/tags/v0.1
+$ git tag
+v0.1
 
-empujar los tags al ambiente
+## ver tags con relacion al commit hash (commit corto)
+
+$ git show-ref --tags
+2550019ebd4eede402e9b3e3dd15424158c2c205 refs/tags/v0.1
+
+## empujar los tags al ambiente
+
 $ git push origin --tags
 
-##borar tags $ git tag -d v0.2
+##borar tags
+$ git tag -d v0.2
 
-##eliminar totalmente la referencia del tags / borrado permanente $ git push origin :refs/tags/v0.2
+##eliminar totalmente la referencia del tags / borrado permanente
+$ git push origin :refs/tags/v0.2
 
-Warning: Permanently added the ECDSA host key for IP address '140.82.112.4' to the list of known hosts. To github.com:MariaRios1214-dev/hyperblock.git
+Warning: Permanently added the ECDSA host key for IP address '140.82.112.4' to the list of known hosts.
+To github.com:MariaRios1214-dev/hyperblock.git
 
-[deleted] v0.2
-Pull Request GitHub(Merge request Gitlab, push request bitbucket)
+- [deleted] v0.2
+
+## Pull Request GitHub(Merge request Gitlab, push request bitbucket)
+
 Funcionalidad que crea una solicitud de revision y/o aprobacion, en donde a nivel de conversaciones se puede se puede dar seguimiento a un cambio solicitado.
 
 El flujo del pull request es el siguiente
