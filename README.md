@@ -23,6 +23,27 @@
 - git log – index.html- Busca los commits en un archivo en específico.
 - git log -S “Por contenido”- Buscar los commits con el contenido dentro del archivo.
 - git log > log.txt - guardar los logs en un archivo txt
+- git grep color -->use la palabra color
+- git grep la --> donde use la palabra la
+- git grep -n color–> en que lineas use la palabra color
+- git grep -n platzi --> en que lineas use la palabra platzi
+- git grep -c la --> cuantas veces use la palabra la
+- git grep -c paltzi --> cuantas veces use la palabra platzi
+- git grep -c “<p>”–> cuantas veces use la etiqueta <p>
+- git log-S “cabecera” --> cuantas veces use la palabra cabecera en
+  todos los commits.
+
+grep–> para los archivos
+log --> para los commits.
+
+- git shortlog -sn: muestra cuantos commit han hecho cada miembro del equipo.
+- git shortlog -sn --all: muestra cuantos commit han hecho cada miembro del equipo, hasta los que han sido eliminados.
+- git shortlog -sn --all --no-merge: muestra cuantos commit ha hecho cada miembro, quitando los eliminados sin los merges.
+- git blame ARCHIVO: muestra quien hizo cada cosa línea por línea.
+- git COMANDO --help:muestra como funciona el comando.
+- git blame ARCHIVO -Llinea_inicial,linea_final: muestra quien hizo cada cosa línea por línea, indicándole desde qué línea ver. Ejemplo -L35,50.
+- git branch -r: se muestran todas las ramas remotas.
+- git branch -a: se muestran todas las ramas, tanto locales como remotas.
 
 # SSH --- Protocolo Security shell
 
