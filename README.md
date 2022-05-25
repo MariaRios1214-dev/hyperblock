@@ -142,3 +142,6 @@ Cuando trabajas en un proyecto que existe en diferentes repositorios remotos (no
 - git push origin master
 
 Creado por: Mafe Rios
+\*Este ejercicio incluye documentacion para Git
+
+- Diverso y attrativo para todos
