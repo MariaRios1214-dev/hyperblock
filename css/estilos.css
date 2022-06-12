@@ -1,0 +1,45 @@
+body {
+  background: black;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 16px;
+}
+#cabecera {
+  background: #33a;
+  color: #fff;
+  margin: 0;
+  padding: 0.5em;
+  font-weight: bold;
+  box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.75);
+}
+#logo-header {
+  background: black;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+#cabecera #tagline {
+  padding: 0 0 0 1em;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+#container {
+  background: white;
+  width: 70%;
+  padding: 1em;
+  text-align: left;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+}
+#container h1 {
+  font-size: 20px;
+}
+#footer {
+  background-color: #33a;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 10px 0px;
+}
